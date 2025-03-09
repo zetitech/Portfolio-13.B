@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Portfolio.css">
+<link rel="stylesheet" href="portfo.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Rólam</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">11. évfolyam</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">12. évfolyam</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">13. évfolyam</a>
+    <a href="#reflex" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Önreflexió</a>
+    <p></p>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption"></p>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <img src="hat.jpeg">
+    <h2 class="w3-wide">Portfólió</h2>
+    <p class="w3-opacity"><i>Molnár Zétény</i></p>
+    <p class="w3-justify">Molnár Zétény vagyok, 19 éves. Ipari informatikai technikusnak tanulok a DUE Bánki Donát Technikumban.</p>
+    <div class="w3-row w3-padding-32">
+        <h3>11. évfolyam</h3>
+        <h4>I. félév</h4>
+        <h4>Elektrotechnika</h4>
+        <img src="Elektro.png" style="width:70%" onclick="onClick(this)" alt="Bipoláris tranzisztoros erősítő">
+        <img src="elek.PNG" style="width:70%" onclick="onClick(this)" alt="Táblázat">
+        <p>- Az Elektrotechnika egy olyan műszaki tudományág, amely az elektromos jelenségekkel, áramkörökkel, elektromágneses mezőkkel és azok alkalmazásaival foglalkozik.</p>
+        <p>- Az Elektrotechnika tantárgy segített megérteni, hogy hogyan működnek az elektromos áramkörök és azokat hogyan kell bekötni és összekötni egymással.</p>
+        <h4>Mikrovezérlő programozás</h4>
+        <img src="Mikro.png" style="width:70%;" onclick="onClick(this)" alt="Arduinoban megjelenítve">
+        <img src="mikrovez.png" style="width:70%" onclick="onClick(this)" alt="A tolatóradar kódolása">
+        <p>- A parkolóradar egy olyan eszköz, amely segít a járművezetőknek a biztonságos parkolásban és manőverezésben. </p>
+        <p>- A Mikrovezérlő programozás, mint tantárgy segített a mikrokontrollerek megértésében és azok programainak megírásában.</p>
+        <h4>II. félév</h4>
+        <h4>Programozás alapjai</h4>
+        <img src="progalapok.png" style="width:70%" onclick="onClick(this)" alt="Mikulás kód">
+        <img src="alma.PNG" style="width:70%" onclick="onClick(this)" alt="Szám kód">
+        <p>- Pythonban dolgoztam és itt készítettem el a kódjaimat és feladataimat is. A Programozás alapjai tantárgy során megtanultam használni a különféle program nyelveket, mint például a Pythont. </p>
+        <p>- Tehát a Python egy magas szintű, általános célú programozási nyelv.</p>
+        <p>- Az egyik legnépszerűbb és legszélesebb körben használt programozási nyelv manapság, köszönhetően egyszerű szintaxisának, olvashatóságának és széleskörű alkalmazhatóságának.</p>
+        <p>- Ez a felület megmutatta nekem, hogy milyen a könnyű és élvezhető programozás.</p>
+        <h4>Digitális áramkörök</h4>
+        <img src="dá.png" style="width:70%" onclick="onClick(this)" alt="NAND kapcsolás">
+        <img src="da.PNG" style="width:70%" onclick="onClick(this)" alt="Függvény táblázat">
+        <p>- Mérés célja az, hogy kombinációs hálózatokat tervezzünk.</p>
+        <p>- A feladat legegyszerűbb realizálása kapuáramkörök segítségével.</p>
+        <p>- A megvalósított áramkör működésének ellenőrzése.</p>
+        <p>- A Digitális áramkörök, mint tantárgy segített megérteni, hogy hogyan működnek az áramkörök és azokat hogyan kell bekötni és összekötni egymással.</p>
+    </div>
+  </div>
+
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h3 class="w3-wide w3-center">12. évfolyam</h3>
+      <h4>I. félév</h4>
+      <h4>Adatbáziskezelés</h4>
+      <img src="adatb.png" style="width:70%" onclick="onClick(this)" alt="Az összekapcsolt táblázatok">
+      <p>- Az adatbáziskezelés az adatok rendszerezésével, tárolásával, visszakeresésével, frissítésével és kezelésével foglalkozik.</p>
+      <p>- Az Adatbáziskezelés alapjai tantárgy segített megérteni, hogy az adatok rendszerezése és tárolása hogyan könnyíti meg a munkavégzést. </p>
+      <h4>Hálózatkezelés</h4>
+      <img src="halok.PNG" style="width:70%" onclick="onClick(this)" alt="Cisco Packet Traceres megvalósítása a feladatnak">
+      <p>- A hálózatkezelés a számítógépes hálózatok tervezését, karbantartását és felügyeletét jelenti, hogy azok hatékonyan és biztonságosan működjenek.</p>
+      <p>- A Hálózatkezelés, mint tantárgy segített megérteni, hogy a hálózatok rendszere és azok felépítése hogyan könnyítheti meg az ipari informatikusok munkáját.</p>
+      <p>- Illetve megtanultam helyesen használni a Cisco Packet Tracert.</p>
+      <h4>II. félév</h4>
+      <h4>PLC programozás</h4>
+      <img src="PLC.png" style="width:70%" onclick="onClick(this)" alt="Létradiagramm">
+      <img src="plc0.PNG" style="width:70%" onclick="onClick(this)" alt="Változók">
+      <img src="plc2.PNG" style="width:70%" onclick="onClick(this)" alt="Működő és világító PLC">
+      <img src="plc3.PNG" style="width:70%" onclick="onClick(this)" alt="Működő és világító PLC">
+      <p>- A PLC egy ipari számítógép, amelyet automatizált vezérlési feladatokra terveztek. </p>
+      <p>- Gyakran használják gyártósorok, gépek, robotok és más ipari folyamatok irányítására.</p>
+      <p>-  A PLC Programozás alapjai tantárgy során megtanultam használni a különféle PLC-KET, mint például a FESTOT.</p>
+      <h4>Számítógépes szimuláció</h4>
+      <img src="szimul.png" style="width:70%" onclick="onClick(this)" alt="Tapskapcsoló kapcsolási rajza">
+      <p>- A számítógépes szimuláció egy olyan tantárgy, amely a valós folyamatok és rendszerek modellezésének, elemzésének, illetve szimulációjának módszertanát mutatta be számítógépes eszközökkel.</p>
+      <p>- A Számítógépes Szimuláció tantárgy keretein belül megtanultam az EasyEDA-ban NYÁK-ot tervezni és megvalósítani is.</p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h3 class="w3-wide w3-center">13. évfolyam</h3>
+    <h4>I. félév</h4>
+    <h4>Munkavállalói idegen nyelven</h4>
+    <img src="joonelet.PNG" style="width:70%" onclick="onClick(this)" alt="Önéletrajz">
+    <img src="joonelet1.PNG" style="width:70%" onclick="onClick(this)" alt="Önéletrajz">
+    <p>- A MUINY vagyis a Munkavállalói idegen nyelven, egy hasznos tantárgy, hiszen felkészít a külföldi munkapiac viszonyaira és nyelvezetére.</p>
+    <p>- Ennek okán készítettem egy német nyelvű öneletrajzot , ami a jövőben hasznos lehet, amennyiben német nyelvterületen szeretnék dolgozni.</p>
+    <h4>IoT</h4>
+    <img src="iot.jpg" style="width:70%" onclick="onClick(this)" alt="Mikroprocesszor">
+    <img src="iott.jpg" style="width:70%" onclick="onClick(this)" alt="Telefonos megjelenítés">
+    <img src="toit.JPG" style="width:70%" onclick="onClick(this)" alt="Kód">
+    <p>- A képeken az Arduino segítségével megírtam egy programot, ami a egy hőmérőt jelenít meg digitálisan, ha egy USB-C-s kábellel összekotjuk a képen látható mikrovezérlőt egy számítógéppel azon belül DHT nevű programmal.</p>
+    <p>- Az órák számos gyakorlati feladatot tartalmaztak még. Az IoT tantárgy jól bemutatta az eszközök programozhatóságát és hatékonyságát, amit a nyári gyakorlaton is megtapasztaltam.</p>
+    <h4>II. félév</h4>
+    <h4>Programfejlesztés</h4>
+    <img src="progfejl.png" style="width:70%" onclick="onClick(this)" alt="Szius">
+    <p>- A programfejlesztés mint tantárgy az informatikai oktatás egyik alapvető területe, amely az algoritmusok megtervezésével, a programozási nyelvek alkalmazásával és a szoftverfejlesztés folyamatának megismerésével foglalkozik.</p>
+    <p>- A tantárgy során megtanultam kezelni a Visual Studiot és megírni a programokat, amivel ipari körülmények között is helyt tudok állni.</p>
+    <h4>Robottechnika CAD/CAM</h4>
+    <img src="robottech.png" style="width:70%" onclick="onClick(this)" alt="Szius">
+    <p>- A Robottechnika és CAD tantárgy célja, hogy átfogó ismereteket szerezzek a robotok és automatizált rendszerek tervezéséről, fejlesztéséről, működtetéséről és alkalmazásáról, miközben elsajátítottam a számítógépes tervezés eszközeinek használatát.</p>
+    <p>- A Robottechnika tantárgy alatt megtanultam pontosan és precízen megértsem a robotok és az azokat irányító programok működését.</p>
+    <p>-  Számos szimulációs környezetben tanultam, mint például az EasyEDA-ban és a Falstadban. </p>
+  </div>
+
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="reflex">
+      <h2 class="w3-wide">Önreflexió</h2>
+      <p>DUE Bánki Donát Technikumba járok/jártam 5 évet. Ezalatt az 5 év alatt számos nehézségbe ütköztem, de a tanáraimnak hála gyorsan áttudtam lépni az akadályokon. Az első 2 évben még nem volt külön szakosodás, ezért nem tudtam még, hogy mit takar a jövő. Ágazati alapvizsgát követően amire 10. év végén került sor, kezdődött a szakirányom ami az Ipari informatikai technikus. A szakmai tantárgyak amiket tanultam félévekre voltak bonta 11-től egészen 13.-ig. Számos jegyzőkönyvet készítettem Digitális áramkörökből és Elektrotechnikából, ezek mellé Programfejlesztés és Programozás alapjai tantárgyokon megtanultam használni a különböző programozási nyelveket. Hálózatkezelésből a Cisco Packet Tracert használtam, mivel ezzel volt a legegyszerűbb kiépíteni virtuálisan a hálózatokat. A végzős évben PLC és IoT tantárgyak és tanáraim segítségével programoztam FESTO típusú PLC-t, illetve egy hőmérőt is. Gyorsan eltelt az 5 év, ebben a tanáraim sokat segítettek.  </p>
+      </div>
+    </div>
+  
+  
+</div>
+
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+ 
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
